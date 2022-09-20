@@ -459,6 +459,7 @@
 		59E877381DC9419700BCD1F7 /* Newsletter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E877371DC9419700BCD1F7 /* Newsletter.swift */; };
 		606754BD28CF91D60033CD5E /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = 606754BC28CF91D60033CD5E /* FacebookCore */; };
 		606754BF28CF91DD0033CD5E /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 606754BE28CF91DD0033CD5E /* FacebookLogin */; };
+		60789DEB28DA1D2000885BB1 /* PerimeterX in Frameworks */ = {isa = PBXBuildFile; productRef = 60789DEA28DA1D2000885BB1 /* PerimeterX */; };
 		608E7A5328ABDBAE00289E92 /* SetYourPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608E7A5128ABD5E700289E92 /* SetYourPasswordViewController.swift */; };
 		608E7A5628ABE6CD00289E92 /* SetYourPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608E7A5428ABE27400289E92 /* SetYourPasswordViewModel.swift */; };
 		60DA50EB28B689A4002E2DF1 /* SetYourPasswordViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DA50E928B68990002E2DF1 /* SetYourPasswordViewModelTests.swift */; };
@@ -3305,6 +3306,7 @@
 				06634FC02807A4C300950F60 /* ApolloAPI in Frameworks */,
 				06634FC22807A4C300950F60 /* ApolloUtils in Frameworks */,
 				60DA511428C96A65002E2DF1 /* SwiftSoup in Frameworks */,
+				60789DEB28DA1D2000885BB1 /* PerimeterX in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -7382,6 +7384,7 @@
 				06634FC12807A4C300950F60 /* ApolloUtils */,
 				06634FC42807A4EB00950F60 /* Prelude */,
 				60DA511328C96A65002E2DF1 /* SwiftSoup */,
+				60789DEA28DA1D2000885BB1 /* PerimeterX */,
 			);
 			productName = KsApi;
 			productReference = D01587501EEB2DE4006E7684 /* KsApi.framework */;
@@ -7490,6 +7493,7 @@
 				19BF225F28D10497007F4197 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				60EAD1B028D0EE24009F9474 /* XCRemoteSwiftPackageReference "ios-snapshot-test-case" */,
 				60EAD1C528D25A36009F9474 /* XCRemoteSwiftPackageReference "appcenter-sdk-apple" */,
+				60789DE728DA1A4800885BB1 /* XCRemoteSwiftPackageReference "px-iOS-Framework" */,
 			);
 			productRefGroup = A7E06C7A1C5A6EB300EBDCC2 /* Products */;
 			projectDirPath = "";
@@ -10457,6 +10461,14 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		60789DE728DA1A4800885BB1 /* XCRemoteSwiftPackageReference "px-iOS-Framework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/PerimeterX/px-iOS-Framework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.13.9;
+			};
+		};
 		60DA50F628BFA331002E2DF1 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
@@ -10577,6 +10589,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 606754B728CF8A190033CD5E /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
 			productName = FacebookLogin;
+		};
+		60789DEA28DA1D2000885BB1 /* PerimeterX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 60789DE728DA1A4800885BB1 /* XCRemoteSwiftPackageReference "px-iOS-Framework" */;
+			productName = PerimeterX;
 		};
 		60DA50FD28C38DDB002E2DF1 /* AlamofireImage */ = {
 			isa = XCSwiftPackageProductDependency;
